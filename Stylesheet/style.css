@@ -1,0 +1,223 @@
+.Titulo{
+    text-align: center;  
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ffc581;
+    margin: auto;
+    padding-bottom: 65px;
+    font-size:250%;
+  position: sticky;
+    top: 0px; 
+    
+}
+
+.Bloque1{
+    background-color: #ffc581;
+    padding: 2px;
+
+}
+
+
+.menu{
+    list-style: none;
+    display: flex; 
+    border: 2px;
+    border-spacing: 2px;
+    margin: 0px 10px 0px 10px;
+    align-items:center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-between;
+    text-transform: uppercase;
+    border-style:solid;
+    box-sizing:content-box;
+    background-color: white;
+
+    
+}
+
+
+.Pagina{
+        background-color: #aaaaaa;
+}
+
+
+
+
+    .menu li{
+    float: left;
+    padding: 7px;
+   
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    box-sizing:content-box;   
+    
+}
+
+#Foto1{
+    width: 17rem;
+    height: 21rem;
+    padding: 35px;
+    position:static;
+    display: inline-block ;
+    right: 0px;
+    margin: 12px;
+    margin-top: 0px;
+}
+
+h2{
+    padding: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 200%;
+    left: 30px;
+    text-align: justify;
+    width: 750px;
+    height: 200px;
+    margin: 30px;
+    display: inline-block ;
+}
+
+footer{
+    background-color: #ffc581;
+}
+.wpp{
+    position: fixed;
+    bottom: 12px;
+    width: 75px;
+    height: auto;
+    left: -12px;
+}
+
+.ig{
+    width: 45px;
+    position: fixed;
+    height: auto;
+    bottom: 90px;
+    left: 2px;
+}
+
+.Menuabajo{
+    bottom: 0px;
+    width: 220px;
+    height: 90px;
+    display: inline-block;
+    list-style: none;
+    margin-left: 100px;
+    border-style: solid;
+    text-align: center;
+    border-style:solid;
+    box-sizing:content-box;
+    background-color: white;
+    padding-left: 0px;
+    font-size: 115%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 0px;
+}
+
+.Menuabajo li{
+    border-style: solid;
+    border-width: 1px;
+}
+
+.Menuabajo a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.Formulario{
+    display: inline;
+    right: 0px;
+    height: auto;
+    margin-left: 700px;
+    top: 0px;
+    
+}
+
+label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    right: 0px;
+    padding-left: 600px;
+    top: 0px;
+    margin: -105px 20px 20px 20px;
+    display:block;
+    
+}
+
+
+
+.tel{
+    padding: 50px;
+    margin:-350px 50px -200px 50px;
+    display: block;
+    top: 0px;
+    bottom: 550px;
+    position: static;
+}
+
+
+
+h4 a{
+    text-decoration: none;
+    color: black;
+}
+
+#pedidos{
+    padding: 29px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    left: 30px;
+    text-align:justify;
+    width: 700px;
+    height: auto;
+    display: block ;
+    right: 0px;
+    margin-left: 500px;
+    margin: 50px 400px;
+    padding: 50px;
+    
+}
+#wpppp{
+    margin:50px 400px;
+    margin-left: 500px;
+    top: 1900px;
+    border-style: solid;
+    width: 90px;
+    height: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #aaaaaa;
+    text-align: center;
+    margin-top: 0px;
+    display: inline-flex;
+   
+}
+#wppp{
+    width: 8rem;
+    height: auto  ;
+    margin: 0px 50px;
+    margin-left:480px ;
+    }
+
+#igg{
+    width: 4.5rem;
+    height: auto  ;
+    margin: -200px 200px 150px 0px;
+    margin-left:950px ;
+
+}
+
+#igggg{
+    margin:-1750px 1350px 0px 1250px;
+    margin-left: 945px;
+    top: 1900px;
+    border-style: solid;
+    width: 90px;
+    height: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #aaaaaa;
+    text-align: center;
+    display: inline-flex;
+}
+
