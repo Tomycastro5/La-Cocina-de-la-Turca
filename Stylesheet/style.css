@@ -154,11 +154,12 @@ label{
 
 .tel{
     padding: 50px;
-    margin:-350px 50px -200px 50px;
+    margin:-250px 50px -200px 50px;
     display: block;
     top: 0px;
-    bottom: 550px;
+    bottom: 570px;
     position: static;
+
 }
 
 
