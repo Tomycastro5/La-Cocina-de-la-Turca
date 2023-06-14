@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head class="head">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +8,12 @@
 
     <link rel="shortcut icon" href="Imagenes/logo.jpeg" type="image/x-icon">
 
-    <link rel="stylesheet" href="Stylesheet/bootstrap.min.css">
+   <!--  <link rel="stylesheet" href="Stylesheet/bootstrap.min.css"> -->
     <link rel="stylesheet" href="Stylesheet/style.css">
+
     
 </head>
-<body>
+<body class="body">
     <main>
         <h1 class="Titulo">La Cocina De La Turca</h1>
      <header class="Bloque1">
@@ -34,13 +35,13 @@
         </nav>
     </header>
     
-    <main>
+    <main id="info">
 
         <div>
             <img id="Foto1" src="Imagenes/foto1.png" align="right" alt="foto 1">
         </div>
 
-        <div>
+        <div id="texto1">
             <h2>
                 ¡Hola! Somos un emprendimiento de comida árabes y judía casera.
                 También tenemos un menú armado para catering, fácil y práctico para tus reuniones.
@@ -63,7 +64,7 @@
                
             </div>
 
-            <div >
+        <div class="footer">
                 <nav>
                     <ul class="Menuabajo">
                         <li><a href="Páginas/Carta.html">Carta</a></li> 
@@ -74,23 +75,23 @@
                     </ul>
                 </nav>
 
-            </div>
+           
 
-            <div >
+            <div class="pregunta">
                 <label for="mensaje">Contanos tu experiencia con nustros servico o producto:</label>
                 <textarea class="Formulario" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                <input type="submit" value="Enviar">
+                <input class="boton" type="submit" value="Enviar">
                
                
                 
             </div>
-
+        </div>
         </footer>
         
 
 
 </main>
-
-<script src="js/bootstrap.min.js"></script>
+<!-- 
+<script src="js/bootstrap.min.js"></script> -->
 </body>
 </html>
