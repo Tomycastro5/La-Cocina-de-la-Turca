@@ -1,24 +1,23 @@
-/* .Titulo{
+.Titulo{
     text-align: center;  
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #ffc581;
     margin: auto;
     padding-bottom: 65px;
-    background-image: linear-gradient(#ffc581, yellow); 
     font-size:250%;
-    position: sticky;
+  position: sticky;
     top: 0px; 
     
-} */
-/* 
+}
+
 .Bloque1{
     background-color: #ffc581;
     padding: 2px;
 
-} */
+}
 
 
-/* .menu{
+.menu{
     list-style: none;
     display: flex; 
     border: 2px;
@@ -34,9 +33,9 @@
 
     
 }
- */
 
-/* .Pagina{
+
+.Pagina{
         background-color: #aaaaaa;
         border-radius: 15%;
 }
@@ -56,9 +55,9 @@
     box-sizing: border-box;
     box-sizing:content-box;   
     
-} */
+}
 
-/* #Foto1{
+#Foto1{
     width: 17rem;
     height: 21rem;
     padding: 35px;
@@ -183,7 +182,7 @@ h4 a{
     margin: 50px 400px;
     padding: 50px;
     
-} */
+}
 
 /* #redes{
     display: grid;
@@ -194,7 +193,7 @@ h4 a{
     "wpppp igggg";
 } */
 
-/* #igggg{
+#igggg{
     margin:-40px 450px 0px 945px;
     border-style: solid;
     width: 90px;
@@ -294,7 +293,7 @@ h4 a{
     .Formulario{
         right: 350px;
         display:absolute;
-    } */
+    }
     
 /*     .recetas{
         display: grid;
@@ -308,7 +307,7 @@ h4 a{
         "laj"
         "catalogo";
     } */
-   /*  .boios{
+    .boios{
         width: 700px;
         height: auto;
 
@@ -448,4 +447,4 @@ h4 a{
     
 
 
-} */
+}

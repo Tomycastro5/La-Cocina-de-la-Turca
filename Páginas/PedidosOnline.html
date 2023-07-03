@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Cocina De La Turca</title>
+    <title>Pedidos Online - La Cocina De La Turca</title>
 
     <link rel="shortcut icon" href="../Imagenes/logo.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="../Stylesheet/style.css">
+    <link rel="stylesheet" href="../css/Estilos.css">
     
 </head>
 <body>
@@ -34,19 +34,23 @@
     
     <main>
            
-        <h3 id="pedidos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam assumenda accusamus dicta. Molestias consectetur eveniet voluptates. Deserunt rerum accusamus illum neque at, itaque officiis distinctio sapiente quae? Adipisci, illo at?
+        <h3 class="pedidos">Bienvenido. Si usted tenia ganas de hacer una reserva, un pedido de una de nuestras picadas, o estaba buscando información sobre eventos para numero mayor de personas, puede comunicarse por nuestro WhatsApp al numero +54 9 11 6283-3618 o también escribirnos por nuestro Instagram, donde también tomamos pedidos, en @Lacocina_delaturca. También tocando el botón de la respectiva app, lo llevara a poder tener una conversación con nosotros.
             </h3>
 
         <img  class="tel"  src="../Imagenes/tel.png" alt="">
 
 
-<div id="redes">
-        <img id="wppp" src="../Imagenes/wpp.png" alt="">
-        <h4><a id="wpppp" href="https://api.whatsapp.com/send?phone=541162833618" target="_blank"> WHATSAPP</h4></a>
+<div class="redes">
+    <div id="btnwpp">
+        <img class="wppp" src="../Imagenes/wpp.png" alt="">
+        <h4><a class="wpppp" href="https://api.whatsapp.com/send?phone=541162833618" target="_blank"> WHATSAPP</h4></a>
+    </div>
 
-        <h4><a id="igggg" href="https://www.instagram.com/lacocina_delaturca/" target="_blank">INSTAGRAM</h4></a>
-        <img id="igg" src="../Imagenes/ig.png" alt>
-        
+    <div id="btnig">
+        <h4><a class="igggg" href="https://www.instagram.com/lacocina_delaturca/" target="_blank">INSTAGRAM</h4></a>
+        <img class="igg" src="../Imagenes/ig.png" alt>
+    </div>    
+
 </div>
        
     </main>
@@ -62,9 +66,9 @@
             <div >
                 <nav>
                     <ul class="Menuabajo">
-                        <li><a href="../Páginas/Carta.html">Carta</a></li> 
-                        <li><a href="../Páginas/Recetas.html">Recetas</a></li>
                         <li><a href="../Index.html">Inicio</a></li>
+                        <li><a href="../Páginas/Recetas.html">Recetas</a></li>
+                        <li><a href="../Páginas/Carta.html">Carta</a></li> 
                         <li><a href="../Páginas/Contacto.html">Contacto</a></li>
 
                     </ul>
@@ -72,7 +76,7 @@
 
             </div>
 
-            <div >
+            <div class="pregunta">
                 <label for="mensaje">Contanos tu experiencia con nustros servico o producto:</label>
                 <textarea class="Formulario" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
                 <input type="submit" value="Enviar">

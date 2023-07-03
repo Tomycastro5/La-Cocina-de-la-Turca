@@ -1,0 +1,754 @@
+/* VARIABLES */
+$Colordelapagina:#ffc581;
+$Letratextos:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$TextosPrincipales:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+
+
+.Titulo{
+@include Titulo;
+
+    
+}
+
+.Bloque1{
+    background-color: $Colordelapagina;
+    padding: 2px;
+
+}
+
+.menu{
+   @include menu;
+
+        li{
+            float: left;
+            padding: 7px;
+        
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            box-sizing: border-box;
+            box-sizing:content-box;   
+            
+        }
+    
+}
+
+.Pagina{
+    background-color: #aaaaaa;
+    border-radius: 15%;
+}
+
+#Foto1{
+    width: 17rem;
+    height: 21rem;
+    padding: 35px;
+    position:static;
+    display: inline-block ;
+    right: 0px;
+    margin: 12px;
+    margin-top: 0px;
+}
+
+h2{
+    padding: 15px;
+    font-family:$Letratextos;
+    font-size: 200%;
+    left: 30px;
+    text-align: justify;
+    width: 750px;
+    height: 200px;
+    margin: 30px;
+    display: inline-block ;
+}
+
+footer{
+    background-color: $Colordelapagina;
+}
+
+.menu1{
+margin:30px 250px 10px 50px;
+width: 1150px;
+height: auto;
+}
+
+.menu2{
+margin:30px 250px 10px 50px;
+width: 1150px;
+height: auto;
+}
+
+.menu3{
+    margin:30px 250px 10px 50px;
+    width: 1150px;
+    height: auto;
+    }
+
+
+.boios{
+    margin:30px 150px 10px 50px;
+    width: 1050px;
+    height: auto;
+}
+
+.falafel{
+    @extend .boios;
+    width: 1000px;
+}
+.keppe{
+    @extend.falafel;
+}
+.zambu{
+    @extend .falafel;
+
+}
+.laj{
+    @extend .falafel;
+
+}
+ .catalogo{
+    @extend .boios;
+
+} 
+
+.wpp{
+    position: fixed;
+    bottom: 12px;
+    width: 75px;
+    height: auto;
+    left: -12px;
+}
+
+.ig{
+    width: 45px;
+    position: fixed;
+    display: flex;
+    justify-content: top ;
+    height: auto;
+    bottom: 90px;
+    left: 2px;
+}
+
+
+.Menuabajo{
+    bottom: 0px;
+    width: 220px;
+    height: 90px;
+    display: inline-block;
+    list-style: none;
+    margin-left: 100px;
+    text-align: center;
+    border-style:solid;
+    box-sizing:content-box;
+    background-color: white;
+    padding-left: 0px;
+    font-size: 115%;
+    font-family: $TextosPrincipales;
+    padding-bottom: 0px;
+
+    li{
+        border-style: solid;
+        border-width: 1px;
+    }
+
+
+    a{
+        text-decoration: none;
+        color: black;}
+}
+
+.Formulario{
+    display: inline;
+    right: 0px;
+    height: auto;
+    margin-left: 700px;
+    top: 0px;
+    
+}
+
+label{
+    font-family: $TextosPrincipales;
+    font-size: large;
+    right: 0px;
+    padding-left: 600px;
+    top: 0px;
+    margin: -105px 20px 20px 20px;
+    display:block;
+    
+}
+
+.tel{
+    padding: 50px;
+    margin:-250px 50px -200px 50px;
+    display: block;
+    top: 0px;
+    bottom: 570px;
+    position: static;
+
+}
+
+
+
+h4 a{
+    text-decoration: none;
+    color: black;
+}
+
+.pedidos{
+    padding: 29px;
+    font-family:$Letratextos;
+    left: 30px;
+    text-align:justify;
+    width: 700px;
+    height: auto;
+    display: block ;
+    right: 0px;
+    margin-left: 500px;
+    margin: 50px 400px;
+    padding: 50px;
+    
+}
+
+.igggg{
+    margin:-40px 450px 0px 945px;
+    border-style: solid;
+    width: 90px;
+    height: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #aaaaaa;
+    text-align: center;
+    display: block;
+}
+
+.wpppp{
+    margin: 0px 0px 0px 500px;
+    border-style: solid;
+    width: 90px;
+    height: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #aaaaaa;
+    text-align: center;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+.wppp{
+    width: 8rem;
+    height: auto  ;
+    margin: 0px 50px;
+    margin-left:480px ;
+    }
+
+.igg{
+    width: 4.5rem;
+    height: auto  ;
+    margin: -600px 150px 105px 25px;
+    margin-left:950px ;
+}
+
+.map{
+    padding: 50px;
+    margin: -300px 0px -200px 0px;
+    display: block;
+    top: 0px;
+    bottom: 550px;
+    position: static;
+    width: 350px;
+    height: auto;
+}
+
+.contactoh3{
+    padding: 29px;
+    font-family:$Letratextos;
+    left: 300px;
+    text-align:justify;
+    width: 700px;
+    height: auto;
+    display: block ;
+    right: 0px;
+    margin-left: 500px;
+    margin: 50px 400px;
+    padding: 50px;
+
+}
+
+.wpcontacto{
+    width: 8rem;
+    height: auto  ;
+    margin: 50px 190px;
+    margin-left:480px ;
+
+}
+
+.igcontacto{
+    width: 4.5rem;
+    height: auto  ;
+    margin: -600px 200px 155px 25px;
+    margin-left:950px ;
+}
+
+.botonig{
+    margin:-43px 450px 0px 945px;
+    border-style: solid;
+    width: 90px;
+    height: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #aaaaaa;
+    text-align: center;
+    display: block;
+}
+
+.botonwp{
+    margin: 0px 0px 0px 500px;
+    border-style: solid;
+    width: 90px;
+    height: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #aaaaaa;
+    text-align: center;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:768px){
+
+
+    #info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "Foto1 texto1" ;
+    }
+
+    #Foto1{
+        position:static;
+        width: 210px;
+        height: auto;
+        margin: 0px 50px 50px -550px;
+    }
+
+    #texto1{
+        font-family:$Letratextos;
+        font-size: 60%;
+        position:absolute;
+        text-align:justify;
+        width: 450px;
+        right: -10px;
+        height: auto;
+        margin: 0px 0px 180px -250px;
+        display:flex
+        
+      
+    }
+    .Titulo{
+        position: static;
+}
+
+    .menu1{
+        width: 650px;
+        height: auto;
+    }
+
+    .menu2{
+        width: 650px;
+        height: auto;
+
+    }
+    .menu3{
+        width: 650px;
+        height: auto;
+
+    }
+
+/*     footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "Menuabajo Pregunta";
+    }
+     */
+
+    .Menuabajo{
+        margin: 160px 50px 50px 50px;
+
+    }
+
+   .pregunta {
+    position: absolute;
+    right: 100px;
+    top: 750px;
+   }
+    .boton{
+        display: absolute;
+        top: 750px;
+        right: 400px;
+    }
+    .Formulario{
+        right: 350px;
+        display:absolute;
+    }
+
+    #divpregunta{
+        position: absolute;
+        margin: -170px -110px -100px -290px;
+    }
+
+
+    .boios{
+        width: 700px;
+        height: auto;
+
+    }
+    .falafel{
+    @extend .boios;
+        top: 0px;
+        display: absolute;
+    }
+    .keppe{
+        @extend .boios;
+    }
+    .zambu{
+        @extend .boios;
+    }
+    .laj{
+        @extend .boios;
+    }
+    .catalogo{
+        @extend .boios;
+    }
+#Pregunta{
+    display:block;
+    margin: -250px 15px 95px -250px;
+}
+
+.tel{
+    margin: 120px 480px 210px 0px;
+    position: absolute;
+}
+
+.pedidos{
+    padding: 29px;
+    font-family:$Letratextos;
+    left: 30px;
+    text-align:justify;
+    width: 390px;
+    height: auto;
+    display: block ;
+    right: 0px;
+    margin: 50px 290px;
+    padding: 50px;
+
+}
+
+.redes{
+    position: static;
+    margin: 0px 0px 120px 0px;
+
+    #btnwpp{
+        position:absolute;
+        margin: -120px 700px 100px -150px;
+}
+    #btnig{
+        position: absolute;
+        margin: 50px 100px 100px -360px;
+
+    }
+
+}
+
+.pregunta{
+    position: absolute;
+    margin: 50px 40px 30px 0px;
+}
+
+
+
+.map{
+    padding: 50px;
+    margin:-400px 0px 50px 0px;
+    display: block;
+    top: 0px;
+    bottom: 550px;
+    position: static;
+    width: 350px;
+    height: auto;
+}
+
+.contactoh3{
+    padding: 29px;
+    font-family:$Letratextos;
+    left: 300px;
+    text-align:justify;
+    width: 250px;
+    height: auto;
+    display: block ;
+    right: 0px;
+    margin-left: 500px;
+    margin: 50px 400px;
+    padding: 50px;
+}
+ .redescontacto{
+    position: static;
+    margin: -100px 0px 60px -400px;
+ }
+
+/*     #wppigg{
+        position: absolute;
+        margin: 0px -1000px -300px -100px;
+    }
+
+    #botonwp{
+        position:static;
+        display:inline;
+        left: 0px;
+        margin: -200px 600px -500px 0px;
+}
+    #botonig{
+        position: absolute;
+        margin: 50px 100px 100px 0px;
+
+    } */
+
+    #divpreguntacontacto{
+        position: absolute;
+        margin: -170px -110px -100px -290px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px){
+    .menu{
+        list-style: none;
+        display: flex; 
+        font-size: smaller;
+        border: 2px;
+        border-spacing: 2px;
+        margin: 0px 10px 0px 10px;
+        align-items:center;
+        font-family: $TextosPrincipales;
+        justify-content:space-around;
+        text-transform: uppercase;
+        border-style:solid;
+        box-sizing:content-box;
+        background-color: white;
+    }
+    #info{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "Foto1" 
+        "texto1" ;
+    }
+
+    #Foto1{
+        position:static;
+        width: 380px;
+        height: auto;
+        right: 50px;
+        margin: 0px -20px 100px -550px;
+    }
+
+    #texto1{
+        font-family:$Letratextos;
+        font-size: 70%;
+        position:absolute;
+        text-align:justify;
+        width: 450px;
+        right: -10px;
+        height: auto;
+        margin: 550px 0px 10px -250px;
+        display:flex
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "Menuabajo"
+        "pregunta"
+    }
+    .Menuabajo{
+        margin: 40px 40px 50px 100px;
+
+    }
+
+   .pregunta {
+    position: absolute;
+    right: 50px;
+    top: 1800px;
+   }
+    .boton{
+        display: absolute;
+        top: 950px;
+        right: 400px;
+    }
+    .Formulario{
+        right: 450px;
+        display:absolute;
+    }
+
+    .boios{
+        width: 300px;
+        height: auto;
+
+    }
+    .falafel{
+    @extend .boios;
+        top: 0px;
+        display: absolute;
+    }
+    .keppe{
+        @extend .boios;
+    }
+    .zambu{
+        @extend .boios;
+    }
+    .laj{
+        @extend .boios;
+    }
+    .catalogo{
+        @extend .boios;
+    }
+    #Pregunta{
+    display:static;
+    margin: -50px 150px 5px -150px;
+    bottom: 0px;
+}
+    
+
+.tel{
+    width: 190px;
+    height: auto;
+    margin: 195px 300px 300px 60px;
+    position: absolute;
+
+}
+
+.pedidos{
+    padding: 29px;
+    font-family:$Letratextos;
+    left: 30px;
+    text-align:center;
+    width: 300px;
+    height: auto;
+    display: block ;
+    right: 0px;
+    margin: 350px 0px;
+    padding: 50px;
+
+}
+
+.redes{
+    position: static;
+    margin: 0px 0px 100px 0px;
+
+    #btnwpp{
+        position:absolute;
+        margin: -300px 0px 100px -450px;
+}
+    #btnig{
+        position: absolute;
+        margin: -140px 100px 100px -680px;
+
+    }
+
+}
+
+
+
+.menu1{
+    width: 300px;
+    height: auto;
+
+}
+.menu2{
+    width: 300px;
+    height: auto;
+}
+
+.menu3{
+    width: 300px;
+    height: auto;
+}
+
+.map{
+    padding: 50px;
+    margin:200px 130px 400px 20px;
+    display: inline;
+    top: 0px;
+    bottom: 550px;
+    position: absolute;
+    width: 300px;
+    height: auto;
+
+}
+
+.contactoh3{
+    padding: 29px;
+    font-family:$Letratextos;
+    left: 300px;
+    text-align:justify;
+    width: 300px;
+    height: auto;
+    display: block ;
+    right: 0px;
+    margin-left: 500px;
+    margin: 220px 100px 0px 0px;
+    padding: 50px;
+
+}
+.redescontacto{
+    position: static;
+    margin:0px 0px 60px -450px;
+ }
+
+ #redesinstagram{
+    margin: -20px 0px 0px -200px;
+    position: absolute;
+ }
+
+}
+
+/* MIXIN */
+
+
+@mixin menu{
+    list-style: none;
+    display: flex; 
+    border: 2px;
+    border-spacing: 2px;
+    margin: 0px 10px 0px 10px;
+    align-items:center;
+    font-family: $TextosPrincipales;
+    justify-content: space-between;
+    text-transform: uppercase;
+    border-style:solid;
+    box-sizing:content-box;
+    background-color: white;
+}
+
+@mixin Titulo{
+    text-align: center;  
+    font-family:$TextosPrincipales;
+    background-color: $Colordelapagina;
+    margin: auto;
+    padding-bottom: 65px;
+    /* background-image: linear-gradient(#ffc581, yellow); */
+    font-size:250%;
+    position: sticky;
+    top: 0px; 
+}
+
+/* ANIMACIONES */
+
