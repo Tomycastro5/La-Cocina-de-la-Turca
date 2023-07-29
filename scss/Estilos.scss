@@ -3,13 +3,39 @@ $Colordelapagina:#ffc581;
 $Letratextos:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 $TextosPrincipales:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+/* MIXIN */
+
+
+@mixin menu{
+    list-style: none;
+    display: flex; 
+    border: 2px;
+    border-spacing: 2px;
+    margin: 0px 10px 0px 10px;
+    align-items:center;
+    font-family: $TextosPrincipales;
+    justify-content: space-between;
+    text-transform: uppercase;
+    border-style:solid;
+    box-sizing:content-box;
+    background-color: white;
+}
+
+@mixin titulo{
+    text-align: center;  
+    font-family:$TextosPrincipales;
+    background-color: $Colordelapagina;
+    margin: auto;
+    padding-bottom: 65px;
+    font-size:250%;
+    position: sticky;
+    top: 0px; 
+}
 
 
 
 .Titulo{
-@include Titulo;
-
-    
+@include titulo
 }
 
 .Bloque1{
@@ -35,7 +61,9 @@ $TextosPrincipales:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-se
             
         }
     
-}
+    }
+
+   
 
 .Pagina{
     background-color: #aaaaaa;
@@ -363,13 +391,6 @@ h4 a{
 
     }
 
-/*     footer{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "Menuabajo Pregunta";
-    }
-     */
 
     .Menuabajo{
         margin: 160px 50px 50px 50px;
@@ -381,6 +402,13 @@ h4 a{
     right: 100px;
     top: 750px;
    }
+
+    #preguntaindextablet{
+        position: absolute;
+        right: 100px;
+        top: 650px;
+    }
+   
     .boton{
         display: absolute;
         top: 750px;
@@ -403,22 +431,27 @@ h4 a{
 
     }
     .falafel{
-    @extend .boios;
+        width: 700px;
+        height: auto;
         top: 0px;
         display: absolute;
     }
     .keppe{
-        @extend .boios;
-    }
+        width: 700px;
+        height: auto;  
+      }
     .zambu{
-        @extend .boios;
-    }
+        width: 700px;
+        height: auto;   
+     }
     .laj{
-        @extend .boios;
+        width: 700px;
+        height: auto;    
     }
     .catalogo{
-        @extend .boios;
-    }
+        width: 700px;
+        height: auto;
+        }
 #Pregunta{
     display:block;
     margin: -250px 15px 95px -250px;
@@ -495,22 +528,7 @@ h4 a{
     margin: -100px 0px 60px -400px;
  }
 
-/*     #wppigg{
-        position: absolute;
-        margin: 0px -1000px -300px -100px;
-    }
 
-    #botonwp{
-        position:static;
-        display:inline;
-        left: 0px;
-        margin: -200px 600px -500px 0px;
-}
-    #botonig{
-        position: absolute;
-        margin: 50px 100px 100px 0px;
-
-    } */
 
     #divpreguntacontacto{
         position: absolute;
@@ -549,6 +567,7 @@ h4 a{
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "Foto1" 
         "texto1" ;
+        
     }
 
     #Foto1{
@@ -567,16 +586,16 @@ h4 a{
         width: 450px;
         right: -10px;
         height: auto;
-        margin: 550px 0px 10px -250px;
+        margin: 600px 0px 10px -550px;
         display:flex
+        
     }
     .footer{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr ;
         grid-template-areas: 
         "Menuabajo"
-        "pregunta"
     }
     .Menuabajo{
         margin: 40px 40px 50px 100px;
@@ -584,18 +603,22 @@ h4 a{
     }
 
    .pregunta {
-    position: absolute;
+    position: none;
     right: 50px;
     top: 1800px;
    }
     .boton{
-        display: absolute;
+        display: none;
         top: 950px;
         right: 400px;
     }
     .Formulario{
         right: 450px;
-        display:absolute;
+        display:none;
+    }
+
+    .textopregunta{
+        display: none;
     }
 
     .boios{
@@ -604,22 +627,28 @@ h4 a{
 
     }
     .falafel{
-    @extend .boios;
+        width: 300px;
+        height: auto;
         top: 0px;
         display: absolute;
     }
     .keppe{
-        @extend .boios;
-    }
+        width: 300px;
+        height: auto;
+        }
     .zambu{
-        @extend .boios;
-    }
+        width: 300px;
+        height: auto;
+        }
     .laj{
-        @extend .boios;
-    }
+        width: 300px;
+        height: auto;
+        }
     .catalogo{
-        @extend .boios;
-    }
+        width: 300px;
+        height: auto;
+        }
+
     #Pregunta{
     display:static;
     margin: -50px 150px 5px -150px;
@@ -720,35 +749,6 @@ h4 a{
 
 }
 
-/* MIXIN */
 
 
-@mixin menu{
-    list-style: none;
-    display: flex; 
-    border: 2px;
-    border-spacing: 2px;
-    margin: 0px 10px 0px 10px;
-    align-items:center;
-    font-family: $TextosPrincipales;
-    justify-content: space-between;
-    text-transform: uppercase;
-    border-style:solid;
-    box-sizing:content-box;
-    background-color: white;
-}
-
-@mixin Titulo{
-    text-align: center;  
-    font-family:$TextosPrincipales;
-    background-color: $Colordelapagina;
-    margin: auto;
-    padding-bottom: 65px;
-    /* background-image: linear-gradient(#ffc581, yellow); */
-    font-size:250%;
-    position: sticky;
-    top: 0px; 
-}
-
-/* ANIMACIONES */
 
