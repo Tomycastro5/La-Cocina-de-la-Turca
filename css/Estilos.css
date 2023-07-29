@@ -344,9 +344,8 @@ h4 a {
     top: 650px;
   }
   .boton {
-    display: absolute;
-    top: 750px;
-    right: 400px;
+    display: none;
+    position: none;
   }
   .Formulario {
     right: 350px;
