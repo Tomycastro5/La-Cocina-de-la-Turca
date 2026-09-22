@@ -1,0 +1,44 @@
+// =========================================================
+// Botones flotantes fijos: WhatsApp e Instagram
+// =========================================================
+@use "variables" as v;
+
+.flotantes {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  a {
+    display: block;
+    border-radius: 50%;
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+  }
+
+  .wpp,
+  .ig {
+    position: static;
+    border-radius: 50%;
+    box-shadow: v.$shadow-md;
+    transition: transform v.$transition, box-shadow v.$transition;
+  }
+
+  .wpp {
+    width: 58px;
+    height: 58px;
+    animation: pulse 2.4s infinite;
+  }
+
+  .ig {
+    width: 42px;
+    height: 42px;
+    animation: floatIcon 3.2s ease-in-out infinite;
+  }
+}

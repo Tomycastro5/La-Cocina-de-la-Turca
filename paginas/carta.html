@@ -6,75 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carta - La Cocina De La Turca</title>
 
-    <link rel="shortcut icon" href="../imagenes/logo.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="../imagenes/marca/logo.jpeg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/estilos.css">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    
-        <h1 class="Titulo">La Cocina De La Turca</h1>
-     <header class="Bloque1">
-        
-       
-        <nav>
+
+    <header class="site-header">
+        <div class="header-top">
+            <a href="../index.html" class="brand">
+                <img src="../imagenes/marca/logo.jpeg" alt="Logo La Cocina De La Turca" class="brand-logo">
+                <span class="brand-name">La Cocina De La Turca</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav class="main-nav" id="mainNav">
             <ul class="menu">
-                <li ><a  href="../index.html">Menu</a></li>
-               
-                <li> <a href="recetas.html">Recetas</a></li>
-               
-                <li>  <a  href="pedidosonline.html">Pedidos Online</a></li>
-             
-                <li> <a class="Pagina" href="carta.html">Carta</a></li>
-               
-                <li> <a href="contacto.html">Contacto</a></li>
-                 
-            </ul>         
+                <li><a href="../index.html">Menu</a></li>
+                <li><a href="recetas.html">Recetas</a></li>
+                <li><a href="pedidosonline.html">Pedidos Online</a></li>
+                <li><a class="Pagina" href="carta.html">Carta</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
-    
-        <main>
-           
-            <img  class="menu1" src="../imagenes/menu1.jpeg" alt="carta1">
-            <img class="menu2" src="../imagenes/menu2.jpeg" alt="carta2">
-            <img class="menu3" src="../imagenes/menu3.jpeg" alt="carta3">
 
-       
-        </main>
-    
+    <main class="galeria-main">
+        <div class="galeria">
+            <img class="galeria-img" src="../imagenes/carta/menu1.jpeg" alt="Carta de La Cocina De La Turca, página 1" data-aos="fade-up">
+            <img class="galeria-img" src="../imagenes/carta/menu2.jpeg" alt="Carta de La Cocina De La Turca, página 2" data-aos="fade-up" data-aos-delay="100">
+            <img class="galeria-img" src="../imagenes/carta/menu3.jpeg" alt="Carta de La Cocina De La Turca, página 3" data-aos="fade-up" data-aos-delay="200">
+        </div>
+    </main>
 
-        <footer>
-            <div >
-                <a  href="https://api.whatsapp.com/send?phone=541162833618" target="_blank"><img class="wpp" src="../imagenes/wpp.png" alt="boton whatsapp"></a> 
-                
-                <a  href="https://www.instagram.com/lacocina_delaturca/" target="_blank"> <img class="ig" src="../imagenes/ig.png" alt="boton instagram"></a>
-            </div>
+    <footer>
+        <div class="footer">
+            <nav>
+                <ul class="Menuabajo">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="recetas.html">Recetas</a></li>
+                    <li><a href="pedidosonline.html">Pedidos Online</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
 
-            <div >
-                <nav>
-                    <ul class="Menuabajo">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="recetas.html">Recetas</a></li>
-                        <li><a href="pedidosonline.html">Pedidos Online</a></li> 
-                        <li><a href="contacto.html">Contacto</a></li>
-
-                    </ul>
-                </nav>
-
-            </div>
-
-            <div id="divpregunta">
-                <label class="textopregunta" for="mensaje">Contanos tu experiencia con nustros servico o producto:</label>
-                <textarea class="Formulario" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <form class="pregunta" id="form-comentarios">
+                <label class="textopregunta" for="mensaje">Contanos tu experiencia con nuestro servicio o producto:</label>
+                <textarea class="Formulario" name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Escribí tu comentario..."></textarea>
                 <input class="boton" type="submit" value="Enviar">
-               
-               
-                
-            </div>
+            </form>
+        </div>
+    </footer>
 
-        </footer>
-        
+    <div class="flotantes">
+        <a href="https://api.whatsapp.com/send?phone=541162833618" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><img class="wpp" src="../imagenes/iconos/wpp.png" alt="WhatsApp"></a>
+        <a href="https://www.instagram.com/lacocina_delaturca/" target="_blank" rel="noopener" aria-label="Visitá nuestro Instagram"><img class="ig" src="../imagenes/iconos/ig.png" alt="Instagram"></a>
+    </div>
 
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

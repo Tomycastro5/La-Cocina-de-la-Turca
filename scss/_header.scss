@@ -1,0 +1,185 @@
+// =========================================================
+// Header / marca / navegación
+// =========================================================
+@use "variables" as v;
+@use "mixins" as m;
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: v.$clr-tan;
+  box-shadow: v.$shadow-sm;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include m.bp-md {
+    padding: 14px 30px;
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: v.$clr-dark;
+
+  &:hover .brand-logo {
+    transform: rotate(-8deg) scale(1.06);
+  }
+}
+
+.brand-logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: v.$shadow-sm;
+  transition: transform v.$transition;
+
+  @include m.bp-md {
+    width: 54px;
+    height: 54px;
+  }
+}
+
+.brand-name {
+  font-family: v.$font-heading;
+  font-weight: 700;
+  font-size: clamp(1rem, 1.6vw + 0.6rem, 1.5rem);
+  letter-spacing: 0.2px;
+
+  @include m.bp-md {
+    font-size: 1.6rem;
+  }
+}
+
+// ---------- Botón hamburguesa (solo mobile) ----------
+.nav-toggle {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  background: v.$clr-white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: v.$shadow-sm;
+  padding: 0;
+
+  span {
+    display: block;
+    margin: 0 auto;
+    width: 22px;
+    height: 2px;
+    background: v.$clr-dark;
+    border-radius: 2px;
+    transition: transform v.$transition, opacity v.$transition;
+  }
+
+  &[aria-expanded="true"] {
+    span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    span:nth-child(2) {
+      opacity: 0;
+    }
+    span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+  }
+
+  @include m.bp-sm {
+    display: none;
+  }
+}
+
+// ---------- Menú ----------
+.main-nav {
+  max-height: 0;
+  overflow: hidden;
+  background: v.$clr-white;
+  transition: max-height v.$transition;
+
+  &.is-open {
+    max-height: 400px;
+  }
+
+  @include m.bp-sm {
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 6px 14px 14px;
+  font-family: v.$font-heading;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+
+  li {
+    border-top: 1px solid #f0e6d6;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  a {
+    display: block;
+    padding: 12px 8px;
+    text-decoration: none;
+    color: v.$clr-dark;
+    border-radius: v.$radius-sm;
+    transition: background v.$transition, color v.$transition, padding-left v.$transition;
+
+    &:hover,
+    &:focus-visible {
+      background: v.$clr-tan;
+      padding-left: 16px;
+    }
+
+    &.Pagina {
+      background: v.$clr-dark;
+      color: v.$clr-white;
+      font-weight: 600;
+
+      &:hover {
+        padding-left: 8px;
+        background: v.$clr-dark;
+      }
+    }
+  }
+
+  @include m.bp-sm {
+    flex-direction: row;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 14px;
+
+    li {
+      border-top: none;
+    }
+
+    a:hover,
+    a:focus-visible {
+      padding-left: 8px;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+// =========================================================
+// Footer: navegación inferior + formulario de comentarios
+// =========================================================
+@use "variables" as v;
+@use "mixins" as m;
+
+footer {
+  background: v.$clr-tan;
+  margin-top: 40px;
+  padding: 36px 20px 120px;
+}
+
+.footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+
+  @include m.bp-sm {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.Menuabajo {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  font-family: v.$font-heading;
+  font-size: 0.9rem;
+
+  li {
+    background: v.$clr-white;
+    border-radius: v.$radius-sm;
+    box-shadow: v.$shadow-sm;
+  }
+
+  a {
+    display: block;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: v.$clr-dark;
+    border-radius: v.$radius-sm;
+    transition: background v.$transition, color v.$transition, transform v.$transition;
+
+    &:hover {
+      background: v.$clr-dark;
+      color: v.$clr-white;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.pregunta {
+  width: 100%;
+  max-width: 520px;
+  @include m.card(v.$radius-lg);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.textopregunta {
+  font-family: v.$font-heading;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.Formulario {
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+  border: 1px solid #e6d8bf;
+  border-radius: v.$radius-sm;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: border-color v.$transition, box-shadow v.$transition;
+
+  &:focus {
+    outline: none;
+    border-color: v.$clr-tan-darker;
+    box-shadow: 0 0 0 3px rgba(235, 165, 86, 0.35);
+  }
+}
+
+.boton {
+  align-self: flex-end;
+  border: none;
+  background: v.$clr-dark;
+  color: v.$clr-white;
+  font-family: v.$font-heading;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 10px 26px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background v.$transition, transform v.$transition;
+
+  &:hover {
+    background: v.$clr-tan-darker;
+    transform: translateY(-2px);
+  }
+}

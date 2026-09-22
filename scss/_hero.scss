@@ -1,0 +1,69 @@
+// =========================================================
+// Hero de la home (#info)
+// =========================================================
+@use "variables" as v;
+@use "mixins" as m;
+
+main#info {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 36px 20px 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 28px;
+
+  > div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  @include m.bp-sm {
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 30px;
+    gap: 40px;
+
+    > div:first-child {
+      width: auto;
+      flex: 0 0 auto;
+    }
+  }
+}
+
+#Foto1 {
+  width: min(85%, 340px);
+  height: auto;
+  border-radius: v.$radius-lg;
+  box-shadow: v.$shadow-md;
+  animation: fadeInUp 0.8s ease both;
+
+  @include m.bp-md {
+    width: 320px;
+  }
+}
+
+#texto1 {
+  width: 100%;
+
+  @include m.bp-md {
+    max-width: 640px;
+  }
+}
+
+#textoinicio {
+  font-family: v.$font-heading;
+  font-weight: 500;
+  font-size: clamp(1.05rem, 1.1vw + 0.9rem, 1.5rem);
+  text-align: left;
+  color: v.$clr-dark;
+  @include m.card(v.$radius-lg);
+  padding: 28px;
+  margin: 0;
+  animation: fadeInUp 0.9s ease 0.1s both;
+
+  @include m.bp-sm {
+    text-align: justify;
+  }
+}

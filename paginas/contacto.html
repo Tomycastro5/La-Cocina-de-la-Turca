@@ -6,88 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - La Cocina De La Turca</title>
 
-    <link rel="shortcut icon" href="../imagenes/logo.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="../imagenes/marca/logo.jpeg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/estilos.css">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    
-        <h1 class="Titulo">La Cocina De La Turca</h1>
-     <header class="Bloque1">
-        
-       
-        <nav>
+
+    <header class="site-header">
+        <div class="header-top">
+            <a href="../index.html" class="brand">
+                <img src="../imagenes/marca/logo.jpeg" alt="Logo La Cocina De La Turca" class="brand-logo">
+                <span class="brand-name">La Cocina De La Turca</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav class="main-nav" id="mainNav">
             <ul class="menu">
-                <li ><a  href="../index.html">Menu</a></li>
-                 
-                <li> <a href="recetas.html">Recetas</a></li>
-                 
-                <li>  <a  href="pedidosonline.html">Pedidos Online</a></li>
-                
-                <li> <a href="carta.html">Carta</a></li>
-                 
-                <li> <a class="Pagina" href="contacto.html">Contacto</a></li>
-                
-            </ul>         
+                <li><a href="../index.html">Menu</a></li>
+                <li><a href="recetas.html">Recetas</a></li>
+                <li><a href="pedidosonline.html">Pedidos Online</a></li>
+                <li><a href="carta.html">Carta</a></li>
+                <li><a class="Pagina" href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
-    
-    <main>
-           
-        <h3 class="contactoh3">Nosotros hacemos envíos por toda zona norte donde incluimos la localidad de Escobar, Cazador, Nordelta, Tigre, Benavidez y mucho más. Los días de entregan varían según su necesidad. Si usted quiere, también va a tener la posibilidad de retirarlo por nuestro lugar de trabajo, que se le brindara una vez el pedido se haya hecho.</h3>
 
-        <img  class="map"  src="../imagenes/mapa.png" alt="mapa escobar">
+    <main class="contenido">
+        <h3 data-aos="fade-up">
+            Nosotros hacemos envíos por toda zona norte donde incluimos la localidad de Escobar, Cazador, Nordelta, Tigre, Benavidez y mucho más. Los días de entrega varían según su necesidad. Si usted quiere, también va a tener la posibilidad de retirarlo por nuestro lugar de trabajo, que se le brindará una vez el pedido se haya hecho.
+        </h3>
 
-
+        <img class="map" src="../imagenes/iconos/mapa.png" alt="Mapa de zona de envíos, Escobar y zona norte" data-aos="zoom-in">
 
         <div class="redescontacto">
-            <img class="wpcontacto" src="../imagenes/wpp.png" alt="foto wpp">
-            <h4><a class="botonwp" href="https://api.whatsapp.com/send?phone=541162833618" target="_blank"> WHATSAPP</h4></a>
-           
-        <div id="redesinstagram">
-            <h4><a class="botonig" href="https://www.instagram.com/lacocina_delaturca/" target="_blank">INSTAGRAM</h4></a>
-            <img class="igcontacto" src="../imagenes/ig.png" alt="foto ig">
-        </div>    
+            <a class="red-btn whatsapp" href="https://api.whatsapp.com/send?phone=541162833618" target="_blank" rel="noopener" data-aos="fade-right">
+                <img src="../imagenes/iconos/wpp.png" alt="WhatsApp">
+                <span>WhatsApp</span>
+            </a>
+
+            <a class="red-btn instagram" href="https://www.instagram.com/lacocina_delaturca/" target="_blank" rel="noopener" data-aos="fade-left">
+                <img src="../imagenes/iconos/ig.png" alt="Instagram">
+                <span>Instagram</span>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <nav>
+                <ul class="Menuabajo">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="recetas.html">Recetas</a></li>
+                    <li><a href="pedidosonline.html">Pedidos Online</a></li>
+                    <li><a href="carta.html">Carta</a></li>
+                </ul>
+            </nav>
+
+            <form class="pregunta" id="form-comentarios">
+                <label class="textopregunta" for="mensaje">Contanos tu experiencia con nuestro servicio o producto:</label>
+                <textarea class="Formulario" name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Escribí tu comentario..."></textarea>
+                <input class="boton" type="submit" value="Enviar">
+            </form>
+        </div>
+    </footer>
+
+    <div class="flotantes">
+        <a href="https://api.whatsapp.com/send?phone=541162833618" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><img class="wpp" src="../imagenes/iconos/wpp.png" alt="WhatsApp"></a>
+        <a href="https://www.instagram.com/lacocina_delaturca/" target="_blank" rel="noopener" aria-label="Visitá nuestro Instagram"><img class="ig" src="../imagenes/iconos/ig.png" alt="Instagram"></a>
     </div>
 
-       
-    </main>
-    
-
-        <footer>
-            <div id="wppigg" >
-                <a  href="https://api.whatsapp.com/send?phone=541162833618" target="_blank"><img class="wpp" src="../imagenes/wpp.png" alt="boton wpp"></a> 
-                
-               <a  href="https://www.instagram.com/lacocina_delaturca/" target="_blank"> <img class="ig" src="../imagenes/ig.png" alt="boton ig"></a>
-            </div>
-
-            <div >
-                <nav>
-                    <ul class="Menuabajo">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="recetas.html">Recetas</a></li>
-                        <li><a href="pedidosonline.html">Pedidos Online</a></li>
-                        <li><a href="carta.html">Carta</a></li> 
-                        
-        
-                    </ul>
-                </nav>
-
-            </div>
-
-            <div id="divpreguntacontacto" >
-                <label class="textopregunta" for="mensaje">Contanos tu experiencia con nustros servico o producto:</label>
-                <textarea class="Formulario" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                <input class="boton" type="submit" value="Enviar">
-               
-               
-                
-            </div>
-
-        </footer>
-        
-
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

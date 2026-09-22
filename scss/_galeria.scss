@@ -1,0 +1,48 @@
+// =========================================================
+// Galerías de imágenes (carta.html y recetas.html)
+// =========================================================
+@use "variables" as v;
+@use "mixins" as m;
+
+main.galeria-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px 60px;
+
+  @include m.bp-md {
+    padding-bottom: 70px;
+  }
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+
+  @include m.bp-sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include m.bp-md {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+  }
+}
+
+.galeria-img {
+  width: 100%;
+  height: auto;
+  border-radius: v.$radius-md;
+  box-shadow: v.$shadow-sm;
+  transition: transform v.$transition, box-shadow v.$transition;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: v.$shadow-lg;
+  }
+}
+
+// Separación extra cuando la galería va seguida de los botones de redes (recetas.html)
+.redes--separadas {
+  margin-top: 34px;
+}

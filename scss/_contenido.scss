@@ -1,0 +1,96 @@
+// =========================================================
+// Páginas de contenido tipo "ficha": pedidosonline.html y contacto.html
+// =========================================================
+@use "variables" as v;
+@use "mixins" as m;
+
+main.contenido {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 34px 20px 60px;
+  text-align: center;
+
+  @include m.bp-md {
+    padding: 50px 20px 70px;
+  }
+
+  h3 {
+    font-family: v.$font-heading;
+    font-weight: 500;
+    font-size: clamp(1rem, 1vw + 0.85rem, 1.25rem);
+    text-align: left;
+    @include m.card(v.$radius-lg);
+    padding: 26px;
+    margin: 0 0 28px;
+    animation: fadeInUp 0.7s ease both;
+  }
+}
+
+.ilustracion {
+  width: min(70%, 260px);
+  margin: 0 auto 30px;
+  border-radius: v.$radius-lg;
+  box-shadow: v.$shadow-sm;
+  animation: fadeInUp 0.8s ease 0.05s both;
+}
+
+.map {
+  width: min(100%, 400px);
+  margin: 0 auto 30px;
+  border-radius: v.$radius-lg;
+  box-shadow: v.$shadow-sm;
+  animation: fadeInUp 0.8s ease 0.05s both;
+}
+
+// ---------- Botones de WhatsApp / Instagram dentro del contenido ----------
+.redes,
+.redescontacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin: 0;
+
+  @include m.bp-sm {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.red-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 26px 12px 14px;
+  @include m.card(100px);
+  text-decoration: none;
+  color: v.$clr-dark;
+  transition: transform v.$transition, box-shadow v.$transition;
+  animation: fadeInUp 0.8s ease both;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: v.$shadow-md;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  span {
+    font-family: v.$font-heading;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+
+  &.whatsapp span {
+    color: #1c9c50;
+  }
+
+  &.instagram span {
+    color: v.$clr-instagram;
+  }
+}

@@ -1,0 +1,32 @@
+// =========================================================
+// Mixins reutilizables
+// =========================================================
+@use "variables" as v;
+
+/// Tablets chicas en adelante (>= 640px)
+@mixin bp-sm {
+  @media screen and (min-width: v.$bp-sm) {
+    @content;
+  }
+}
+
+/// Escritorio en adelante (>= 1000px)
+@mixin bp-md {
+  @media screen and (min-width: v.$bp-md) {
+    @content;
+  }
+}
+
+/// Pantallas grandes (>= 1300px)
+@mixin bp-lg {
+  @media screen and (min-width: v.$bp-lg) {
+    @content;
+  }
+}
+
+/// Tarjeta blanca estándar (usada en textos, botones de redes, etc.)
+@mixin card($radius: v.$radius-lg) {
+  background: v.$clr-white;
+  border-radius: $radius;
+  box-shadow: v.$shadow-sm;
+}
