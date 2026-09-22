@@ -35,29 +35,3 @@ HTML + SCSS puro, sin frameworks ni build tools pesados. Las animaciones de scro
 │   ├── carta/                 # Fotos de la carta (menu1/2/3)
 │   └── recetas/                # Fotos de recetas + catálogo
 └── package.json
-```
-
-## Cómo editar los estilos
-
-**No edites `css/estilos.css` directamente** — se pisa cada vez que se compila el SCSS. Editá los archivos en `scss/` y compilá:
-
-```bash
-npm install          # instala sass (una sola vez)
-npm run build:css    # compila scss/estilos.scss -> css/estilos.css
-npm run watch:css    # recompila automáticamente mientras trabajás
-```
-
-## Convenciones
-
-- **Mobile-first**: los estilos base son para mobile; los `@include bp-sm/bp-md/bp-lg` (definidos en `_mixins.scss`) agregan las mejoras para pantallas más grandes.
-- **Sin `position: absolute` para maquetar**: el layout usa Flexbox y CSS Grid.
-- **Colores/sombras/radios** centralizados en `_variables.scss` — si hay que cambiar el color principal de la marca, se cambia en un solo lugar.
-- Los formularios de "Contanos tu experiencia" no tienen backend: `js/main.js` sólo evita que la página recargue y muestra un mensaje de agradecimiento. Si en algún momento se conecta a un servicio real (Formspree, un backend propio, etc.), ese es el lugar para engancharlo.
-
-## Páginas y sus enlaces de contacto
-
-El número de WhatsApp (+54 9 11 6283-3618) e Instagram (@lacocina_delaturca) están repetidos en cada página (botón flotante + botón dentro del contenido + footer). Si cambian, conviene actualizar todas las coincidencias de una:
-
-```bash
-grep -rn "541162833618\|lacocina_delaturca" --include="*.html" .
-```
